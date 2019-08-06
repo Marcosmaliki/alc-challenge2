@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milk"
+    tools:context=".SignIn">
+
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/email_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:gravity="center_vertical"
+        app:fb_backgroundColor="#FF7043"
+        app:fb_cornerRadius="25dp"
+        app:fb_icon="@drawable/ic_email"
+        app:fb_iconColor="#FFF"
+        app:fb_iconHeight="28dp"
+        app:fb_iconMarginEnd="15dp"
+        app:fb_iconMarginStart="15dp"
+        app:fb_iconPosition="left"
+        app:fb_iconWidth="28dp"
+        app:fb_rippleColor="#FBE9E7"
+        app:fb_shape="rectangle"
+        app:fb_text="Sign in with Email"
+        app:fb_textColor="#FFF"
+        app:fb_textPaddingEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/google_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/google_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:enabled="true"
+        android:gravity="center_vertical"
+        app:fb_backgroundColor="@android:color/white"
+        app:fb_cornerRadius="25dp"
+        app:fb_icon="@drawable/ic_search"
+        app:fb_iconHeight="28dp"
+        app:fb_iconMarginEnd="15dp"
+        app:fb_iconMarginStart="15dp"
+        app:fb_iconPosition="left"
+        app:fb_iconWidth="28dp"
+        app:fb_rippleColor="#FBE9E7"
+        app:fb_shape="rectangle"
+        android:visibility="visible"
+        app:fb_text="Sign in with Google"
+        app:fb_textColor="@android:color/black"
+        app:fb_textPaddingEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_sign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
